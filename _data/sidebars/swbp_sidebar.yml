@@ -23,10 +23,10 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Acerca del producto
-      url: /index.html
-      output: web, pdf
-      type: homepage
+  ##- title: Acerca del producto
+     # url: /index.html
+     # output: web, pdf
+      #type: homepage
 
     - title: Soporte técnico
       url: /swbp_support.html
