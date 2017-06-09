@@ -3,7 +3,7 @@ layout: none
 search: exclude
 ---
 
-{% assign sidebar = site.pdf_sidebar %}
+{% include custom/sidebarconfigs.html %}
 
  {% for entry in sidebar_pdf %}
    {% for folder in entry.folders %}

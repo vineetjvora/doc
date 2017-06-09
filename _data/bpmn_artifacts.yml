@@ -1,0 +1,9 @@
+
+entries:
+- title: Grupo
+  image: group.png
+  description: Permite agrupar visualmente varios elementos del diagrama de procesos.
+
+- title: Anotación
+  image: annotation.png
+  description: Permite colocar una anotación con texto en el diagrama de procesos.

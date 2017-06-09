@@ -1,0 +1,2192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   class="modeler"
+   height="211"
+   width="551.5"
+   id="modeler">
+  <metadata
+     id="metadata522">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <style
+     id="style3"
+     type="text/css">
+        .resizeBox {
+            stroke:#696161;
+            stroke-width:1px;
+        }
+
+        text {
+            font-family: Verdana, sans-serif;
+            font-size: 10px;
+            stroke: none;
+            fill: #000;
+            cursor: pointer;
+        }
+
+        /*Common fill properties for activities*/
+        .task, .task_o, .callactivity, .callactivity_o, .eventsubTask, .eventsubTask_o, .transactionSquare, .taskMarker, .pathMarker {
+            fill:url(#linearGradientTask);
+            stroke:#79adc8;
+            stroke-width: 1px;
+            cursor: pointer;
+        }
+
+        .callactivity, .callactivity_o {
+            stroke-width:2px;
+        }
+        
+        .callactivity_s {
+            fill:url(#linearGradientTask);
+            stroke:#79adc8;
+        }
+
+        .eventsubTask, .eventsubTask_o {
+            stroke-dasharray:6,4;
+        }
+
+        .task_o, .callactivity_o, .eventsubTask_o {
+            stroke:#2cff20;
+        }
+        
+        .task_s, callactivity_s, eventsubTask_s {
+            fill:url(#linearGradientTask);
+            stroke:#79adc8;
+        }
+
+        .transactionSquare {
+            fill:none;
+        }
+
+        .pathMarker{
+            fill:none;
+        }
+
+        /*Common fill properties for events*/
+        .startEvent, .startEvent_o {
+            stroke:#008000;
+            fill:url(#linearGradientStartEvent);
+            stroke-width:1px;
+            cursor:pointer;
+        }
+
+        .startEvent_o {
+            stroke:#2cff20;
+        }
+
+        .startMarker {
+            stroke:#008000;
+            fill:none;
+            stroke-width:2px;
+        }
+
+        .startFilledMarker{
+            fill:#008000;
+            stroke:none;
+        }
+
+        .intermediateInterruptingEvent, .intermediateInterruptingEvent_o, .intermediateEvent, .intermediateEvent_o, .intermediateEvent1 {
+            stroke:#2c5aa0;
+            fill:url(#linearGradientIntermediateEvent);
+            stroke-width:1px;
+            cursor:pointer;
+        }
+
+        .intermediateInterruptingEvent {
+            stroke-dasharray: 3,3;
+            /*stroke-dashoffset: 5;*/
+        }
+
+        .intermediateEvent_o, .intermediateInterruptingEvent_o {
+            stroke:#2cff20;
+            /*stroke-dashoffset: 5;*/
+        }
+
+        .intermediateEvent1 {
+            fill:none;
+        }
+
+        .intermediateMarker, .intermediateFilledMarker {
+            fill:none;
+            stroke:#2c5aa0;
+            stroke-width:2px;
+            cursor:pointer;
+        }
+
+        .intermediateFilledMarker {
+            fill:#2c5aa0;
+            stroke-width:1px;
+        }
+
+        .endEvent, .endEvent_o {
+            stroke:#550000;
+            fill:url(#linearGradientEndEvent);
+            stroke-width:2px;
+            cursor:pointer;
+        }
+
+        .endEvent_o {
+            stroke:#2cff20;
+        }
+
+        .endFilledMarked {
+            fill:#550000;
+            stroke:#550000;
+            stroke-width:1px;
+            cursor:pointer;
+        }
+
+        /*Common fill properties for gateways*/
+        .gateway, .gateway_o {
+            stroke:#d4aa00;
+            fill:url(#linearGradientGateway);
+            stroke-width:1px;
+            cursor:pointer;
+        }
+
+        .gateway_o {
+            stroke:#2cff20;
+        }
+
+        /*Common fill properties for lines*/
+        .sequenceFlowSubLine, .sequenceFlowSubLine_o, .sequenceFlowLine, .sequenceFlowLine_o {
+            fill:none;
+            stroke-width:10px;
+            cursor:pointer;
+        }
+
+        .sequenceFlowLine, .sequenceFlowLine_o {
+            stroke-width: 1px;
+        }
+
+        .sequenceFlowSubLine {
+            stroke:#ffffff;
+            stroke-opacity:0.1;
+        }
+
+        .sequenceFlowLine {
+            stroke: #000000;
+        }
+
+        .sequenceFlowLine_o {
+            stroke:#2cff20;
+        }
+
+        /*Common fill properties for swimlanes*/
+        .swimlane, .swimlane_o {
+            fill: #FFF;
+            stroke-width:1px;
+            stroke: #ADADAE;
+            cursor:pointer;
+        }
+
+        .swimlane_o {
+            stroke:#2cff20;
+        }
+
+        /*Common fill properties for dataobjects*/
+        .itemaware, .itemaware_o {
+            fill:url(#linearGradientDataObject);
+            stroke:#666666;
+            stroke-width:1px;
+            cursor:pointer;
+        }
+
+        .itemaware_o {
+            stroke:#2cff20;
+        }
+
+        /*Common fill properties for annotations*/
+        .group, .group_o {
+            stroke:#2c5aa0;
+            cursor:pointer;
+            fill:none;
+            stroke-width:1.5px;
+        }
+
+        .group_o {
+            stroke:#2cff20;
+        }
+
+        .annotationArtifact, .annotationArtifactRect {
+            fill:none;
+            stroke:#000000;
+            stroke-width:1px;
+            cursor:pointer;
+        }
+
+        .annotationArtifactRect, .annotationArtifactRect_o {
+            stroke:none;
+            fill:#FFF;
+            fill-opacity:1;
+        }
+
+        .annotationArtifactRect_o {
+            stroke:#2cff20;
+        }
+        </style>
+  <defs
+     id="globalDef">
+    <!--Definición de gradientes para las figuras-->
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="65.5"
+       x2="65.5"
+       y1="34.5"
+       x1="34.5"
+       id="linearGradientStartEvent">
+      <stop
+         id="stop7"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="10%" />
+      <stop
+         id="stop9"
+         style="stop-color:#ccffaa;stop-opacity:1"
+         offset="90%" />
+    </linearGradient>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="66"
+       x2="546"
+       y1="34"
+       x1="514"
+       id="linearGradientEndEvent">
+      <stop
+         id="stop12"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="10%" />
+      <stop
+         id="stop14"
+         style="stop-color:#e7c1c1;stop-opacity:1"
+         offset="90%" />
+    </linearGradient>
+    <linearGradient
+       y2="1"
+       x2="1"
+       y1="0"
+       x1="1"
+       id="linearGradientTask">
+      <stop
+         id="stop17"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="10%" />
+      <stop
+         id="stop19"
+         style="stop-color:#c1d3e1;stop-opacity:1"
+         offset="100%" />
+    </linearGradient>
+    <linearGradient
+       y2="1"
+       x2="1"
+       y1="0"
+       x1="1"
+       id="linearGradientHighlightTask">
+      <stop
+         id="stop22"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="10%" />
+      <stop
+         id="stop24"
+         style="stop-color:#e1acac;stop-opacity:1"
+         offset="100%" />
+    </linearGradient>
+    <linearGradient
+       y2="1"
+       x2="1"
+       y1="0"
+       x1="0"
+       id="linearGradientIntermediateEvent">
+      <stop
+         id="stop27"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="10%" />
+      <stop
+         id="stop29"
+         style="stop-color:#87aade;stop-opacity:1"
+         offset="100%" />
+    </linearGradient>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="75.455841"
+       x2="465.45584"
+       y1="24.544155"
+       x1="414.54416"
+       id="linearGradientGateway">
+      <stop
+         id="stop32"
+         style="stop-color:#FFFDE2;stop-opacity:1"
+         offset="10%" />
+      <stop
+         id="stop34"
+         style="stop-color:#FFFAA6;stop-opacity:1"
+         offset="100%" />
+    </linearGradient>
+    <linearGradient
+       y2="1"
+       x2="1"
+       y1="0"
+       x1="0"
+       id="linearGradientDataObject">
+      <stop
+         id="stop37"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="10%" />
+      <stop
+         id="stop39"
+         style="stop-color:#afbac7;stop-opacity:1"
+         offset="100%" />
+    </linearGradient>
+    <circle
+       style="stroke:#696161;stroke-width:1px"
+       class="resizeBox"
+       r="5"
+       cy="0"
+       cx="0"
+       id="resizeBox" />
+    <rect
+       class="lineHandler"
+       height="10"
+       width="10"
+       y="0"
+       x="0"
+       id="lineHandler" />
+    <!--definición de marcadores para las figuras-->
+    <path
+       transform="matrix(0.35,0,0,0.35,-9.1,-360.5)"
+       d="m 0.5,1051.8622 17.0774,-39.6847 15.0444,21.9792 19.5171,-27.474 L 34.8582,1048.199 19.8137,1029.6795 0.5,1051.8622 Z"
+       id="errorMarker" />
+    <g
+       id="ruleMarker">
+      <path
+         id="path45"
+         transform="matrix(0.32,0,0,0.32,-7.52,-7.52)"
+         d="m 0,0 0,43.9063 46.75,0 L 46.75,0 Z m 4.25,9.875 18.5,0 0,4.8438 -18.5,0 z m 20,0 18.5,0 0,4.8438 -18.5,0 z m -20,8 18.5,0 0,4.8438 -18.5,0 z m 20,0 18.5,0 0,4.8438 -18.5,0 z m -20,8 18.5,0 0,4.8438 -18.5,0 z m 20,0 18.5,0 0,4.8438 -18.5,0 z m -20,8 18.5,0 0,4.8438 -18.5,0 z m 20,0 18.5,0 0,4.8438 -18.5,0 z" />
+    </g>
+    <g
+       style="fill:#2c5aa0;stroke:#2c5aa0;stroke-width:1px"
+       class="intermediateFilledMarker"
+       id="taskRuleMarker">
+      <path
+         id="path48"
+         transform="matrix(0.32,0,0,0.32,-7.52,-7.52)"
+         d="m 0,0 0,43.9063 46.75,0 L 46.75,0 Z m 4.25,9.875 18.5,0 0,4.8438 -18.5,0 z m 20,0 18.5,0 0,4.8438 -18.5,0 z m -20,8 18.5,0 0,4.8438 -18.5,0 z m 20,0 18.5,0 0,4.8438 -18.5,0 z m -20,8 18.5,0 0,4.8438 -18.5,0 z m 20,0 18.5,0 0,4.8438 -18.5,0 z m -20,8 18.5,0 0,4.8438 -18.5,0 z m 20,0 18.5,0 0,4.8438 -18.5,0 z" />
+    </g>
+    <path
+       transform="matrix(0.35,0,0,0.35,5.95,8.05)"
+       d="m 0,0 -33.73973,0.37343 -10.78131,-31.973 27.07653,-20.13383 27.51552,19.52961 z"
+       id="multipleMarker" />
+    <path
+       transform="matrix(0.35,0,0,0.35,-1.75,-8.75)"
+       d="m 0,0 0,19.4788 -19.45519,0 0,10.5627 19.45519,0 0,19.4787 10.58626,0 0,-19.4787 19.47871,0 0,-10.5627 -19.47871,0 0,-19.4788 z"
+       id="parallelMarker" />
+    <path
+       transform="matrix(0.35,0,0,0.35,8.05,0)"
+       d="m 0,0 -20.432,-24.2007 0,16.9761 -25.0594,0 0,14.1289 25.0594,0 0,17.332 z"
+       id="linkMarker" />
+    <path
+       transform="translate(-1,-20)"
+       d="m 0,0 0,15.875 -11.25,-11.2187 -2.34375,2.3125 11.25,11.25 -15.90625,0 0,3.3125 15.90625,0 -11.25,11.2187 L -11.25,35.0938 0,23.875 0,39.75 l 3.28125,0 0,-15.9062 11.25,11.25 L 16.84375,32.75 5.625,21.5313 l 15.875,0 0,-3.3125 -15.875,0 L 16.84375,7 l -2.3125,-2.3437 -11.25,11.25 0,-15.9063 z"
+       id="complexMarker" />
+    <path
+       transform="matrix(0.35,0,0,0.35,8.4,4.9)"
+       d="m 0,0 -23.59924,0 -23.59925,0 11.79962,-20.43755 11.79963,-20.43755 11.79962,20.43755 z"
+       id="signalMarker" />
+    <path
+       d="M 0,0 -21.34041,47.167 0,29.7859 21.340402,47.167 0,0 Z"
+       transform="matrix(0.35,0,0,0.35,0,-9.1)"
+       id="scalationMarker" />
+    <path
+       transform="matrix(0.35,0,0,0.35,6.3,-7.7)"
+       d="m 0,0 -18.3627,18.3627 -18.3848,-18.3848 -3.3366,3.3367 18.3847,18.3847 -18.3847,18.3848 3.3366,3.3367 L -18.3627,25.036 0,43.3987 3.3366,40.062 -15.026,21.6993 3.3366,3.3367 Z"
+       id="cancelMarker" />
+    <g
+       style="fill:url(#linearGradientTask);stroke:#79adc8;stroke-width:1px"
+       transform="scale(0.65,0.65)"
+       class="taskMarker"
+       id="manualMarker">
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path58"
+         class="pathMarker"
+         d="m 0,0 c -0.27155,0 -0.5225,0.072 -0.75179,0.1792 -0.007,0 -0.0189,0 -0.0259,0 -1.25518,0.3798 -2.16186,4.1013 -2.9035,6.1425 -0.22877,0.5536 -0.36294,1.1549 -0.36294,1.7916 l 0,4.7861 c 0,2.6228 2.13932,4.7348 4.79597,4.7348 l 5.0552,0 5.69034,0 7.72539,0 c 0.97664,0 1.76284,-0.7762 1.76284,-1.7404 0,-0.9641 -0.7862,-1.7403 -1.76284,-1.7403 l -3.11089,0 c 0.0118,-0.043 0.0283,-0.085 0.0389,-0.128 l 4.16081,0 c 0.97664,0 1.76285,-0.7762 1.76285,-1.7404 0,-0.9642 -2.73949,-1.7404 -1.76285,-1.7404 l -4.01823,0 0,-0.064 5.23667,0 c 0.97664,0 1.76284,-0.7762 1.76284,-1.7404 C 23.29287,7.7762 22.50667,7 21.53003,7 l -5.39221,0 c -0.0116,-0.046 -0.0132,-0.095 -0.0259,-0.1408 l 7.56984,0 c 0.97663,0 1.76284,-0.7762 1.76284,-1.7404 0,-0.9642 -0.78621,-1.7404 -1.76284,-1.7404 l -12.18433,0 -0.92031,0 C 11.27566,3.1473 11.78259,2.5098 11.78259,1.7404 11.78259,0.7762 10.99639,0 10.01975,0 L 8e-5,0 Z" />
+    </g>
+    <g
+       transform="matrix(1.3,0,0,1.3,-9.75,-5.85)"
+       id="messageThrowMarker">
+      <path
+         id="path61"
+         style="stroke:#ffffff;stroke-opacity:0.4"
+         d="m 0,0 0,9.175062 14.84706,0 L 14.84706,0 14.82256,0 7.4154,4.648917 5e-5,0 Z" />
+      <path
+         id="path63"
+         style="stroke:#ffffff;stroke-opacity:0.4"
+         d="M 0.6,0 7.48839,4.318911 14.37677,0" />
+    </g>
+    <g
+       style="fill:#2c5aa0;stroke:#2c5aa0;stroke-width:1px"
+       class="intermediateFilledMarker"
+       transform="matrix(1.3,0,0,1.3,-9.75,-5.85)"
+       id="taskMessageThrowMarker">
+      <path
+         id="path66"
+         style="stroke:#ffffff;stroke-opacity:0.4"
+         d="m 0,0 0,9.175062 14.84706,0 L 14.84706,0 14.82256,0 7.4154,4.648917 5e-5,0 Z" />
+      <path
+         id="path68"
+         style="stroke:#ffffff;stroke-opacity:0.4"
+         d="M 0.6,0 7.48839,4.318911 14.37677,0" />
+    </g>
+    <g
+       transform="matrix(0.35,0,0,0.35,-9.45,-5.95)"
+       id="messageCatchMarker">
+      <rect
+         id="rect71"
+         y="0"
+         x="0"
+         height="32.573116"
+         width="52.704407" />
+      <path
+         id="path73"
+         d="M 0,0 26.30906,16.49536 52.61811,0" />
+    </g>
+    <g
+       style="fill:none;stroke:#2c5aa0;stroke-width:2px"
+       class="intermediateMarker"
+       transform="matrix(0.35,0,0,0.35,-9.45,-5.95)"
+       id="taskMessageCatchMarker">
+      <rect
+         id="rect76"
+         y="0"
+         x="0"
+         height="32.573116"
+         width="52.704407" />
+      <path
+         id="path78"
+         d="M 0,0 26.30906,16.49536 52.61811,0" />
+    </g>
+    <g
+       transform="matrix(0.35,0,0,0.35,-0.7,-4.55)"
+       id="compensaMarker">
+      <path
+         id="path81"
+         transform="matrix(0,-1,1,0,0,0)"
+         d="m 0,0 -28.36636,0 14.18318,-24.56599 z" />
+      <path
+         id="path83"
+         transform="matrix(0,-1,1,0,23,0)"
+         d="m 0,0 -28.36636,0 14.18318,-24.56599 z" />
+    </g>
+    <filter
+       height="1.3"
+       id="dropshadow">
+      <feGaussianBlur
+         id="feGaussianBlur86"
+         stdDeviation="3"
+         in="SourceAlpha" />
+      <feOffset
+         id="feOffset88"
+         result="offsetblur"
+         dy="0"
+         dx="0" />
+      <feComponentTransfer
+         id="feComponentTransfer90">
+        <feFuncA
+           id="feFuncA92"
+           slope="0.5"
+           type="linear" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge94">
+        <feMergeNode
+           id="feMergeNode96" />
+        <feMergeNode
+           id="feMergeNode98"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <g
+       transform="matrix(0.35,0,0,0.35,-138.6,-76.65)"
+       id="timerMarker">
+      <path
+         id="path101"
+         transform="matrix(0.6346099,0,0,0.6346099,274.19065,81.345956)"
+         d="m 232.18784,217.1541 a 40.089989,40.089989 0 1 1 -80.17997,0 40.089989,40.089989 0 1 1 80.17997,0 z" />
+      <path
+         id="path103"
+         d="m 421.49964,219.1541 -8.76968,0" />
+      <path
+         id="path105"
+         d="m 396.40906,193.78618 -0.0964,8.76915" />
+      <path
+         id="path107"
+         d="m 370.76392,218.75252 8.76858,0.13882" />
+      <path
+         id="path109"
+         d="m 396.04976,244.52342 0.0278,-8.76963" />
+      <path
+         id="path111"
+         d="m 408.75323,219.1541 -12.86938,0" />
+      <path
+         id="path113"
+         d="m 401.39526,204.36536 -4.8964,14.70678" />
+      <path
+         id="path115"
+         d="m 414.26521,201.41346 -6.26889,6.13256" />
+      <path
+         id="path117"
+         d="m 413.87083,237.28912 -6.13256,-6.26889" />
+      <path
+         id="path119"
+         d="m 377.99517,236.89474 6.26889,-6.13256" />
+      <path
+         id="path121"
+         d="m 378.38955,201.01908 6.13256,6.26889" />
+    </g>
+    <g
+       style="fill:url(#linearGradientTask);stroke:#79adc8;stroke-width:1px"
+       transform="matrix(0.8,0,0,0.8,0,-833.6)"
+       class="taskMarker"
+       id="userMarker">
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path124"
+         class="pathMarker"
+         d="m 0,1039 c -3.3158023,0 -6,2.8058 -6,6.25 0,2.0045 0.9288788,3.7654 2.34375,4.9062 -3.3002786,1.7745 -5.6842907,5.8793 -6,10.75 l 19.3125,0 c -0.3158218,-4.8705 -2.7074728,-8.9755 -6,-10.75 C 5.0711212,1049.0154 6,1047.2545 6,1045.25 6,1041.8058 3.3158023,1039 0,1039 Z" />
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path126"
+         class="pathMarker"
+         transform="matrix(0.6398828,0,0,0.66465394,245.76439,734.73647)"
+         d="m -377.4453,473.79996 a 9.3826418,9.3826418 0 0 1 -12.52292,0.66553" />
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path128"
+         class="pathMarker"
+         d="m -5.1190626,1060.732 0,-3.8413" />
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path130"
+         class="pathMarker"
+         d="m 5.1190626,1060.732 0,-3.8413" />
+      <path
+         id="path132"
+         style="fill:#2c5aa0;stroke-width:1"
+         d="m 0.06204402,1039.6046 c -3.10856302,0 -5.66539592,2.4352 -5.68305502,5.5312 0.8963285,-1.0836 1.7094089,-1.6888 3.0835319,-1.6888 2.07094865,0 4.4437605,1.0758 6.2188589,0.7688 0.570252,-0.099 1.2624582,-0.3804 1.939646,-0.7272 -0.6073258,-2.271 -3.0493799,-3.884 -5.55898178,-3.884 z" />
+    </g>
+    <g
+       style="fill:url(#linearGradientTask);stroke:#79adc8;stroke-width:1px"
+       transform="scale(0.8,0.8)"
+       class="taskMarker"
+       id="serviceMarker">
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path135"
+         class="pathMarker"
+         d="M 0,0 1.478093,-2.5912 C 0.715776,-3.0574 -0.123604,-3.4141 -1.01739,-3.6278 l -0.767843,2.8793 -2.495483,0 -0.787044,-2.8793 c -0.895236,0.2142 -1.733065,0.5691 -2.495483,1.0366 l 1.487693,2.5721 -1.766033,1.7659 -2.581869,-1.478 c -0.467511,0.7623 -0.822527,1.6003 -1.036583,2.4952 l 2.86981,0.7678 0,2.5048 -2.860209,0.7775 c 0.21606,0.8875 0.562993,1.7267 1.026982,2.4856 l 2.562669,-1.478" />
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path137"
+         class="pathMarker"
+         d="M 0,0 C -0.989621,0.2366 -1.915788,0.629 -2.758588,1.1457 L -1.114047,3.989 -3.066282,5.9411 -5.920362,4.3073 C -6.437165,5.15 -6.829609,6.0763 -7.066244,7.0656 l 3.172388,0.8488 0,2.769 -3.161774,0.8593 c 0.238849,0.9811 0.622356,1.9088 1.135268,2.7477 l 2.832859,-1.6337 1.952235,1.952 -1.633935,2.8539 C -1.922663,17.9845 -0.994685,18.3806 0,18.619 l 0.848804,-3.1828 2.758588,0 0.870025,3.1828 C 5.465705,18.381 6.392266,17.9901 7.236005,17.4731 L 5.591463,14.63 l 1.952236,-1.9521 2.864694,1.6337 c 0.515612,-0.8389 0.908032,-1.7642 1.145874,-2.7477 l -3.182994,-0.8593 0,-2.769 3.182994,-0.87 C 11.31655,6.0772 10.926202,5.1498 10.408393,4.3073 L 7.554305,5.9623 5.60207,4.0102 7.236005,1.1457 C 6.393314,0.6305 5.465445,0.2361 4.477417,0 l -0.848804,3.1828 -2.758588,0 z m 2.238708,5.697 c 1.994007,0 3.607392,1.6133 3.607392,3.6072 0,1.9938 -1.613385,3.6176 -3.607392,3.6176 -1.994007,0 -3.607392,-1.6238 -3.607392,-3.6176 0,-1.9939 1.613385,-3.6072 3.607392,-3.6072 z" />
+    </g>
+    <g
+       style="fill:url(#linearGradientTask);stroke:#79adc8;stroke-width:1px"
+       transform="scale(0.7,0.7)"
+       class="taskMarker"
+       id="scriptMarker">
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path140"
+         class="pathMarker"
+         d="m 0,0 c 3.5628793,2.98 3.5212524,7.9199 0,10.8403 l 0,0.1186 13.595206,-10e-4 c 4.246065,-3.0502 4.698752,-8.6843 0.03211,-12.4597 -1.719778,-1.441 -2.097829,-3.2691 -2.297848,-5.5453 0,-1.9186 0.795633,-3.6321 2.05209,-4.7945 l -9.1791042,0 C -3.4529091,-12.2118 -4.5264371,-3.5242 -2.88e-5,-2e-4 Z" />
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path142"
+         class="pathMarker"
+         d="m 0,-8 9.5315769,0" />
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path144"
+         class="pathMarker"
+         d="m -0.5,-4.1568 9.5315769,0" />
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path146"
+         class="pathMarker"
+         d="m 2.5,0 9.531577,0" />
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path148"
+         class="pathMarker"
+         d="m 4.5,4 9.531577,0" />
+      <path
+         style="fill:none;stroke:#79adc8;stroke-width:1px"
+         id="path150"
+         class="pathMarker"
+         d="m 4,8 9.531577,0" />
+    </g>
+    <g
+       style="fill:url(#linearGradientTask);stroke:#79adc8;stroke-width:1px"
+       class="taskMarker"
+       id="subProcessMarker">
+      <rect
+         id="rect153"
+         style="fill:#ffffff;fill-opacity:0.1"
+         height="14"
+         width="14"
+         y="-7"
+         x="-7" />
+      <path
+         id="path155"
+         d="M -5,0 5,0 M 0,-5 0,5" />
+    </g>
+    <marker
+       style="fill:#000000;stroke:none;stroke-dasharray:none"
+       orient="auto"
+       markerHeight="10"
+       markerWidth="10"
+       markerUnits="userSpaceOnUse"
+       refY="5"
+       refX="0"
+       viewBox="0 0 12 12"
+       id="sequenceArrow">
+      <path
+         id="path158"
+         d="M 0,0 10,5 0,10" />
+    </marker>
+    <marker
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-dasharray:none"
+       orient="auto"
+       markerHeight="10"
+       markerWidth="10"
+       markerUnits="userSpaceOnUse"
+       refY="5"
+       refX="7"
+       viewBox="0 0 12 12"
+       id="messageArrow">
+      <path
+         id="path161"
+         d="M 0,0 10,5 0,10" />
+    </marker>
+    <marker
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-dasharray:none"
+       orient="auto"
+       markerHeight="12"
+       markerWidth="12"
+       markerUnits="userSpaceOnUse"
+       refY="0"
+       refX="3"
+       viewBox="-6 -6 12 12"
+       id="conditionTail">
+      <rect
+         id="rect164"
+         transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)"
+         height="6"
+         width="6"
+         y="-3"
+         x="-3" />
+    </marker>
+    <marker
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-dasharray:none"
+       orient="auto"
+       markerHeight="10"
+       markerWidth="10"
+       markerUnits="userSpaceOnUse"
+       refY="5"
+       refX="-3"
+       viewBox="0 0 12 12"
+       id="defaultTail">
+      <path
+         id="path167"
+         d="M 5,0 0,10" />
+    </marker>
+    <marker
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-dasharray:none"
+       orient="auto"
+       markerHeight="10"
+       markerWidth="10"
+       markerUnits="userSpaceOnUse"
+       refY="0"
+       refX="3"
+       viewBox="-5 -5 12 12"
+       id="messageTail">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle170"
+         r="3" />
+    </marker>
+    <!--Definición de eventos iniciales-->
+    <circle
+       cy="0"
+       cx="0"
+       oclass="startEvent_o"
+       bclass="startEvent"
+       r="15"
+       id="startEvent" />
+    <g
+       oclass="startEvent_o"
+       bclass="startEvent"
+       id="messageStartEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use174"
+         y="0"
+         x="0"
+         xlink:href="#startEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#008000;stroke-width:2px"
+         id="use176"
+         class="startMarker"
+         y="0"
+         x="0"
+         xlink:href="#messageCatchMarker" />
+    </g>
+    <g
+       oclass="startEvent_o"
+       bclass="startEvent"
+       id="timerStartEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use179"
+         y="0"
+         x="0"
+         xlink:href="#startEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#008000;stroke-width:2px"
+         id="use181"
+         class="startMarker"
+         y="0"
+         x="0"
+         xlink:href="#timerMarker" />
+    </g>
+    <g
+       oclass="startEvent_o"
+       bclass="startEvent"
+       id="ruleStartEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use184"
+         y="0"
+         x="0"
+         xlink:href="#startEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#008000;stroke:none"
+         id="use186"
+         transform="scale(1.1,1.1)"
+         class="startFilledMarker"
+         y="0"
+         x="0"
+         xlink:href="#ruleMarker" />
+    </g>
+    <g
+       oclass="startEvent_o"
+       bclass="startEvent"
+       id="signalStartEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use189"
+         y="0"
+         x="0"
+         xlink:href="#startEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#008000;stroke-width:2px"
+         id="use191"
+         class="startMarker"
+         y="0"
+         x="0"
+         xlink:href="#signalMarker" />
+    </g>
+    <g
+       oclass="startEvent_o"
+       bclass="startEvent"
+       id="multipleStartEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use194"
+         y="0"
+         x="0"
+         xlink:href="#startEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#008000;stroke-width:2px"
+         id="use196"
+         class="startMarker"
+         y="0"
+         x="0"
+         xlink:href="#multipleMarker" />
+    </g>
+    <g
+       oclass="startEvent_o"
+       bclass="startEvent"
+       id="parallelStartEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use199"
+         y="0"
+         x="0"
+         xlink:href="#startEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#008000;stroke-width:2px"
+         id="use201"
+         class="startMarker"
+         y="0"
+         x="0"
+         xlink:href="#parallelMarker" />
+    </g>
+    <g
+       oclass="startEvent_o"
+       bclass="startEvent"
+       id="scalationStartEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use204"
+         y="0"
+         x="0"
+         xlink:href="#startEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#008000;stroke-width:2px"
+         id="use206"
+         class="startMarker"
+         y="0"
+         x="0"
+         xlink:href="#scalationMarker" />
+    </g>
+    <g
+       oclass="startEvent_o"
+       bclass="startEvent"
+       id="errorStartEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use209"
+         y="0"
+         x="0"
+         xlink:href="#startEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#008000;stroke-width:2px"
+         id="use211"
+         class="startMarker"
+         y="0"
+         x="0"
+         xlink:href="#errorMarker" />
+    </g>
+    <g
+       oclass="startEvent_o"
+       bclass="startEvent"
+       id="compensationStartEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use214"
+         y="0"
+         x="0"
+         xlink:href="#startEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#008000;stroke-width:2px"
+         id="use216"
+         class="startMarker"
+         y="0"
+         x="0"
+         xlink:href="#compensaMarker" />
+    </g>
+    <!--Definición de eventos intermedios-->
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="intermediateEvent">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle219"
+         r="15" />
+      <circle
+         style="fill:none;stroke:#2c5aa0;stroke-width:1px"
+         cy="0"
+         cx="0"
+         id="circle221"
+         class="intermediateEvent1"
+         r="12" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="messageIntermediateCatchEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use224"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#2c5aa0;stroke-width:2px"
+         id="use226"
+         class="intermediateMarker"
+         y="0"
+         x="0"
+         xlink:href="#messageCatchMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="messageIntermediateThrowEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use229"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#2c5aa0;stroke:#2c5aa0;stroke-width:1px"
+         id="use231"
+         class="intermediateFilledMarker"
+         y="0"
+         x="0"
+         xlink:href="#messageThrowMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="timerIntermediateEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use234"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#2c5aa0;stroke-width:2px"
+         id="use236"
+         class="intermediateMarker"
+         y="0"
+         x="0"
+         xlink:href="#timerMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="errorIntermediateEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use239"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#2c5aa0;stroke-width:2px"
+         id="use241"
+         class="intermediateMarker"
+         y="0"
+         x="0"
+         xlink:href="#errorMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="cancelIntermediateEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use244"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#2c5aa0;stroke:#2c5aa0;stroke-width:1px"
+         id="use246"
+         class="intermediateFilledMarker"
+         y="0"
+         x="0"
+         xlink:href="#cancelMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="compensationIntermediateCatchEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use249"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#2c5aa0;stroke-width:2px"
+         id="use251"
+         class="intermediateMarker"
+         y="0"
+         x="0"
+         xlink:href="#compensaMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="compensationIntermediateThrowEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use254"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#2c5aa0;stroke:#2c5aa0;stroke-width:1px"
+         id="use256"
+         class="intermediateFilledMarker"
+         y="0"
+         x="0"
+         xlink:href="#compensaMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="ruleIntermediateEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use259"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#2c5aa0;stroke:#2c5aa0;stroke-width:1px"
+         id="use261"
+         class="intermediateFilledMarker"
+         y="0"
+         x="0"
+         xlink:href="#ruleMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="linkIntermediateCatchEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use264"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#2c5aa0;stroke-width:2px"
+         id="use266"
+         class="intermediateMarker"
+         y="0"
+         x="0"
+         xlink:href="#linkMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="linkIntermediateThrowEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use269"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#2c5aa0;stroke:#2c5aa0;stroke-width:1px"
+         id="use271"
+         class="intermediateFilledMarker"
+         y="0"
+         x="0"
+         xlink:href="#linkMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="signalIntermediateCatchEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use274"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#2c5aa0;stroke-width:2px"
+         id="use276"
+         class="intermediateMarker"
+         y="0"
+         x="0"
+         xlink:href="#signalMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="signalIntermediateThrowEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use279"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#2c5aa0;stroke:#2c5aa0;stroke-width:1px"
+         id="use281"
+         class="intermediateFilledMarker"
+         y="0"
+         x="0"
+         xlink:href="#signalMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="multipleIntermediateCatchEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use284"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#2c5aa0;stroke-width:2px"
+         id="use286"
+         class="intermediateMarker"
+         y="0"
+         x="0"
+         xlink:href="#multipleMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="multipleIntermediateThrowEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use289"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#2c5aa0;stroke:#2c5aa0;stroke-width:1px"
+         id="use291"
+         class="intermediateFilledMarker"
+         y="0"
+         x="0"
+         xlink:href="#multipleMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="scalationIntermediateCatchEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use294"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#2c5aa0;stroke-width:2px"
+         id="use296"
+         class="intermediateMarker"
+         y="0"
+         x="0"
+         xlink:href="#scalationMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="scalationIntermediateThrowEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use299"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#2c5aa0;stroke:#2c5aa0;stroke-width:1px"
+         id="use301"
+         class="intermediateFilledMarker"
+         y="0"
+         x="0"
+         xlink:href="#scalationMarker" />
+    </g>
+    <g
+       oclass="intermediateEvent_o"
+       bclass="intermediateEvent"
+       id="parallelIntermediateEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use304"
+         y="0"
+         x="0"
+         xlink:href="#intermediateEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:none;stroke:#2c5aa0;stroke-width:2px"
+         id="use306"
+         class="intermediateMarker"
+         y="0"
+         x="0"
+         xlink:href="#parallelMarker" />
+    </g>
+    <!--Definición de eventos finales-->
+    <circle
+       cy="0"
+       cx="0"
+       oclass="endEvent_o"
+       bclass="endEvent"
+       r="15"
+       id="endEvent" />
+    <g
+       oclass="endEvent_o"
+       bclass="endEvent"
+       id="messageEndEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use310"
+         y="0"
+         x="0"
+         xlink:href="#endEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#550000;stroke:#550000;stroke-width:1px"
+         id="use312"
+         class="endFilledMarked"
+         y="0"
+         x="0"
+         xlink:href="#messageThrowMarker" />
+    </g>
+    <g
+       oclass="endEvent_o"
+       bclass="endEvent"
+       id="signalEndEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use315"
+         y="0"
+         x="0"
+         xlink:href="#endEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#550000;stroke:#550000;stroke-width:1px"
+         id="use317"
+         class="endFilledMarked"
+         y="0"
+         x="0"
+         xlink:href="#signalMarker" />
+    </g>
+    <g
+       oclass="endEvent_o"
+       bclass="endEvent"
+       id="scalationEndEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use320"
+         y="0"
+         x="0"
+         xlink:href="#endEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#550000;stroke:#550000;stroke-width:1px"
+         id="use322"
+         class="endFilledMarked"
+         y="0"
+         x="0"
+         xlink:href="#scalationMarker" />
+    </g>
+    <g
+       oclass="endEvent_o"
+       bclass="endEvent"
+       id="errorEndEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use325"
+         y="0"
+         x="0"
+         xlink:href="#endEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#550000;stroke:#550000;stroke-width:1px"
+         id="use327"
+         class="endFilledMarked"
+         y="0"
+         x="0"
+         xlink:href="#errorMarker" />
+    </g>
+    <g
+       oclass="endEvent_o"
+       bclass="endEvent"
+       id="multipleEndEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use330"
+         y="0"
+         x="0"
+         xlink:href="#endEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#550000;stroke:#550000;stroke-width:1px"
+         id="use332"
+         class="endFilledMarked"
+         y="0"
+         x="0"
+         xlink:href="#multipleMarker" />
+    </g>
+    <g
+       oclass="endEvent_o"
+       bclass="endEvent"
+       id="cancelationEndEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use335"
+         y="0"
+         x="0"
+         xlink:href="#endEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#550000;stroke:#550000;stroke-width:1px"
+         id="use337"
+         class="endFilledMarked"
+         y="0"
+         x="0"
+         xlink:href="#cancelMarker" />
+    </g>
+    <g
+       oclass="endEvent_o"
+       bclass="endEvent"
+       id="terminationEndEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use340"
+         y="0"
+         x="0"
+         xlink:href="#endEvent" />
+      <circle
+         style="fill:#550000;stroke:#550000;stroke-width:1px"
+         cy="0"
+         cx="0"
+         id="circle342"
+         class="endFilledMarked"
+         r="8" />
+    </g>
+    <g
+       oclass="endEvent_o"
+       bclass="endEvent"
+       id="compensationEndEvent">
+      <use
+         height="100%"
+         width="100%"
+         id="use345"
+         y="0"
+         x="0"
+         xlink:href="#endEvent" />
+      <use
+         height="100%"
+         width="100%"
+         style="fill:#550000;stroke:#550000;stroke-width:1px"
+         id="use347"
+         class="endFilledMarked"
+         y="0"
+         x="0"
+         xlink:href="#compensaMarker" />
+    </g>
+    <!--Definición de compuertas-->
+    <rect
+       transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"
+       oclass="gateway_o"
+       bclass="gateway"
+       height="35"
+       width="35"
+       y="-17.5"
+       x="-17.5"
+       id="gateway" />
+    <g
+       oclass="gateway_o"
+       bclass="gateway"
+       id="exclusiveDataGateway">
+      <use
+         height="100%"
+         width="100%"
+         id="use351"
+         y="0"
+         x="0"
+         xlink:href="#gateway" />
+      <use
+         height="100%"
+         width="100%"
+         id="use353"
+         transform="scale(1.3,1.3)"
+         style="fill:#d4aa00;stroke:none"
+         y="0"
+         x="0"
+         xlink:href="#cancelMarker" />
+    </g>
+    <g
+       oclass="gateway_o"
+       bclass="gateway"
+       id="inclusiveDataGateway">
+      <use
+         height="100%"
+         width="100%"
+         id="use356"
+         y="0"
+         x="0"
+         xlink:href="#gateway" />
+      <circle
+         cy="0"
+         cx="0"
+         id="circle358"
+         style="fill:none;stroke:#d4aa00;stroke-width:2"
+         r="14" />
+    </g>
+    <g
+       oclass="gateway_o"
+       bclass="gateway"
+       id="exclusiveStartGateway">
+      <use
+         height="100%"
+         width="100%"
+         id="use361"
+         y="0"
+         x="0"
+         xlink:href="#gateway" />
+      <circle
+         cy="0"
+         cx="0"
+         id="circle363"
+         style="fill:none;stroke:#d4aa00;stroke-width:2"
+         r="14" />
+      <use
+         height="100%"
+         width="100%"
+         id="use365"
+         transform="scale(0.9,0.9)"
+         style="fill:none;stroke:#d4aa00;stroke-width:4.5"
+         y="0"
+         x="0"
+         xlink:href="#multipleMarker" />
+    </g>
+    <g
+       oclass="gateway_o"
+       bclass="gateway"
+       id="eventGateway">
+      <use
+         height="100%"
+         width="100%"
+         id="use368"
+         y="0"
+         x="0"
+         xlink:href="#gateway" />
+      <circle
+         cy="0"
+         cx="0"
+         id="circle370"
+         style="fill:none;stroke:#d4aa00;stroke-width:2"
+         r="14" />
+      <circle
+         cy="0"
+         cx="0"
+         id="circle372"
+         style="fill:none;stroke:#d4aa00;stroke-width:2"
+         r="10" />
+      <use
+         height="100%"
+         width="100%"
+         id="use374"
+         transform="scale(0.75,0.75)"
+         style="fill:none;stroke:#d4aa00;stroke-width:6"
+         y="0"
+         x="0"
+         xlink:href="#multipleMarker" />
+    </g>
+    <g
+       oclass="gateway_o"
+       bclass="gateway"
+       id="parallelGateway">
+      <use
+         height="100%"
+         width="100%"
+         id="use377"
+         y="0"
+         x="0"
+         xlink:href="#gateway" />
+      <use
+         height="100%"
+         width="100%"
+         id="use379"
+         transform="scale(1.5,1.5)"
+         style="fill:#d4aa00;stroke:none"
+         y="0"
+         x="0"
+         xlink:href="#parallelMarker" />
+    </g>
+    <g
+       oclass="gateway_o"
+       bclass="gateway"
+       id="parallelStartGateway">
+      <use
+         height="100%"
+         width="100%"
+         id="use382"
+         y="0"
+         x="0"
+         xlink:href="#gateway" />
+      <circle
+         cy="0"
+         cx="0"
+         id="circle384"
+         style="fill:none;stroke:#d4aa00;stroke-width:2"
+         r="14" />
+      <use
+         height="100%"
+         width="100%"
+         id="use386"
+         style="fill:none;stroke:#d4aa00;stroke-width:3.5"
+         y="0"
+         x="0"
+         xlink:href="#parallelMarker" />
+    </g>
+    <g
+       oclass="gateway_o"
+       bclass="gateway"
+       id="complexGateway">
+      <use
+         height="100%"
+         width="100%"
+         id="use389"
+         y="0"
+         x="0"
+         xlink:href="#gateway" />
+      <use
+         height="100%"
+         width="100%"
+         id="use391"
+         transform="scale(0.7,0.7)"
+         style="fill:#d4aa00;stroke:none"
+         y="0"
+         x="0"
+         xlink:href="#complexMarker" />
+    </g>
+    <!--Definición de objetos de datos-->
+    <g
+       oclass="itemaware_o"
+       bclass="itemaware"
+       id="dataObject">
+      <path
+         id="path394"
+         d="m -25,-25 0,74.61135 58.22841,0 0,-55.2509 L 13.34415,-25 -25,-25 Z"
+         transform="matrix(0.7,0,0,0.7,-2.1,-7)" />
+      <path
+         id="path396"
+         d="m 12.5,-24 0,19.5625 20.0601,0"
+         transform="matrix(0.7,0,0,0.7,-1.4,-7)" />
+    </g>
+    <g
+       class="itemAware"
+       transform="translate(-12,-10)"
+       oclass="itemaware_o"
+       bclass="itemaware"
+       id="dataStore">
+      <path
+         id="path399"
+         transform="matrix(0.6,0,0,0.6,13.2,-14.4)"
+         d="m 0,0 c -27.75868,0 -50.28125,5.6228 -50.28125,12.5625 0,0.1516 0.0412,0.2871 0.0625,0.4375 l -0.0625,0 0,61.5624 0,0.3125 0.0312,0 c 0.68314,6.7909 22.92187,12.25 50.25,12.25 27.32495,0 49.53067,-5.4602 50.21875,-12.25 l 0.0312,0 0,-0.3125 0,-61.5624 -0.0312,0 c 0.0212,-0.1501 0.0312,-0.2862 0.0312,-0.4375 C 50.2499,5.6228 27.75858,0 -1e-4,0 Z" />
+      <path
+         id="path401"
+         transform="matrix(0.6,0,0,0.6,43.2,-7.2)"
+         d="m 0,0 c 0,6.9397 -22.50286,12.5654 -50.26153,12.5654 -27.39179,0 -49.73975,-5.4833 -50.25272,-12.33" />
+    </g>
+    <g
+       oclass="itemaware_o"
+       bclass="itemaware"
+       id="dataInput">
+      <use
+         height="100%"
+         width="100%"
+         id="use404"
+         y="0"
+         x="0"
+         xlink:href="#dataObject" />
+      <use
+         height="100%"
+         width="100%"
+         id="use406"
+         transform="scale(0.8,0.8)"
+         style="fill:none;stroke:#666666;stroke-width:2.5"
+         y="-17"
+         x="-12"
+         xlink:href="#linkMarker" />
+    </g>
+    <g
+       oclass="itemaware_o"
+       bclass="itemaware"
+       id="dataOutput">
+      <use
+         height="100%"
+         width="100%"
+         id="use409"
+         y="0"
+         x="0"
+         xlink:href="#dataObject" />
+      <use
+         height="100%"
+         width="100%"
+         id="use411"
+         transform="scale(0.8,0.8)"
+         style="fill:#666666;stroke:none;stroke-width:2.5"
+         y="-17"
+         x="-12"
+         xlink:href="#linkMarker" />
+    </g>
+    <!--Definición de tareas-->
+    <g
+       styled="stroke:#2c5aa0"
+       id="task">
+      <rect
+         style="fill:url(#linearGradientTask);stroke:#79adc8;stroke-width:1px"
+         id="rect414"
+         class="task"
+         height="60"
+         width="100"
+         ry="10"
+         rx="10"
+         y="-30"
+         x="-50" />
+    </g>
+    <g
+       styled="stroke:#2c5aa0"
+       id="userTask">
+      <use
+         height="100%"
+         width="100%"
+         id="use417"
+         y="0"
+         x="0"
+         xlink:href="#task" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use419"
+         transform="matrix(0.8,0,0,0.8,-36,-24)"
+         xlink:href="#userMarker" />
+    </g>
+    <g
+       styled="stroke:#2c5aa0"
+       id="serviceTask">
+      <use
+         height="100%"
+         width="100%"
+         id="use422"
+         y="0"
+         x="0"
+         xlink:href="#task" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use424"
+         transform="matrix(0.8,0,0,0.8,-34.4,-21.6)"
+         xlink:href="#serviceMarker" />
+    </g>
+    <g
+       styled="stroke:#2c5aa0"
+       id="scriptTask">
+      <use
+         height="100%"
+         width="100%"
+         id="use427"
+         y="0"
+         x="0"
+         xlink:href="#task" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use429"
+         transform="matrix(0.7,0,0,0.7,-42,-16.8)"
+         xlink:href="#scriptMarker" />
+    </g>
+    <g
+       styled="stroke:#2c5aa0"
+       id="ruleTask">
+      <use
+         height="100%"
+         width="100%"
+         id="use432"
+         y="0"
+         x="0"
+         xlink:href="#task" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use434"
+         style="fill:#2c5aa0"
+         transform="translate(-35,-17)"
+         xlink:href="#ruleMarker" />
+    </g>
+    <g
+       styled="stroke:#2c5aa0"
+       id="sendTask">
+      <use
+         height="100%"
+         width="100%"
+         id="use437"
+         y="0"
+         x="0"
+         xlink:href="#task" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use439"
+         style="fill:#2c5aa0"
+         transform="translate(-35,-19)"
+         xlink:href="#messageThrowMarker" />
+    </g>
+    <g
+       styled="stroke:#2c5aa0"
+       id="receiveTask">
+      <use
+         height="100%"
+         width="100%"
+         id="use442"
+         y="0"
+         x="0"
+         xlink:href="#task" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use444"
+         style="fill:none;stroke:#2c5aa0;stroke-width:3"
+         transform="translate(-35,-19)"
+         xlink:href="#messageCatchMarker" />
+    </g>
+    <g
+       styled="stroke:#2c5aa0"
+       id="manualTask">
+      <use
+         height="100%"
+         width="100%"
+         id="use447"
+         y="0"
+         x="0"
+         xlink:href="#task" />
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use449"
+         style="fill:none;stroke:#2c5aa0;stroke-width:4"
+         transform="matrix(0.7,0,0,0.7,-42,-24.5)"
+         xlink:href="#manualMarker" />
+    </g>
+    <!--Definición de swimlanes-->
+    <g
+       oclass="swimlane_o"
+       bclass="swimlane"
+       id="pool">
+      <rect
+         id="rect452"
+         style="fill:#e8e8ff;stroke-width:2"
+         height="200"
+         y="-100"
+         x="-300"
+         width="600" />
+      <path
+         id="path454"
+         style="fill:none;stroke-width:2"
+         d="m -280,-100 0,200" />
+    </g>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2867547,0,0,0.77714889,-64.5,-29.5)"
+       y2="142.1864"
+       x2="202.4473"
+       y1="63.694359"
+       x1="202.4473"
+       id="linearGradient4680"
+       xlink:href="#linearGradientTask" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2867547,0,0,0.77714889,-64.5,-29.5)"
+       y2="283.72943"
+       x2="202.4473"
+       y1="205.23738"
+       x1="202.4473"
+       id="linearGradient4712"
+       xlink:href="#linearGradientTask" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2867547,0,0,0.77714889,-64.5,-29.5)"
+       y2="283.72943"
+       x2="311.24814"
+       y1="205.23738"
+       x1="311.24814"
+       id="linearGradient4714"
+       xlink:href="#linearGradientTask" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2867547,0,0,0.77714889,-64.5,-29.5)"
+       y2="283.72943"
+       x2="420.04898"
+       y1="205.23738"
+       x1="420.04898"
+       id="linearGradient4716"
+       xlink:href="#linearGradientTask" />
+  </defs>
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:10px;stroke-opacity:0.1"
+     id="path456"
+     class="sequenceFlowSubLine"
+     d="m 50.5,50.5 17.5,0 0,0 17.5,0" />
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:10px;stroke-opacity:0.1"
+     id="path458"
+     class="sequenceFlowSubLine"
+     d="m 145.5,80.5 0,20 0,0 0,20" />
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:10px;stroke-opacity:0.1"
+     id="path460"
+     class="sequenceFlowSubLine"
+     d="m 195.5,160.5 15,0 0,0 15,0" />
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:10px;stroke-opacity:0.1"
+     id="path462"
+     class="sequenceFlowSubLine"
+     d="m 335.5,160.5 15,0 0,0 15,0" />
+  <rect
+     style="fill:url(#linearGradient4680);stroke:#79adc8;stroke-width:1px"
+     y="20.5"
+     x="95.5"
+     height="60"
+     width="100"
+     id="UserTask:1"
+     class="task"
+     ry="10"
+     rx="10"
+     oclass="task_o"
+     bclass="task" />
+  <use
+     transform="translate(-14.5,0.5)"
+     height="100%"
+     width="100%"
+     id="use465"
+     y="28"
+     x="123"
+     xlink:href="#userMarker" />
+  <text
+     style="font-size:10px;font-family:Verdana, sans-serif;text-anchor:middle;fill:#000000;stroke:none"
+     id="text467"
+     x="145.5"
+     y="55.5"
+     class="textLabel"
+     font-size="11">
+    <tspan
+       id="tspan469"
+       x="145.5">Modelado</tspan>
+  </text>
+  <use
+     transform="translate(-14.5,0.5)"
+     style="fill:url(#linearGradientStartEvent);stroke:#008000;stroke-width:1px"
+     y="50"
+     x="50"
+     id="StartEvent:0"
+     height="30"
+     width="30"
+     class="startEvent"
+     xlink:href="#startEvent" />
+  <text
+     style="font-size:10px;font-family:Verdana, sans-serif;text-anchor:middle;fill:#000000;stroke:none"
+     id="text472"
+     x="35.5"
+     y="80.5"
+     class="textLabel"
+     font-size="11">
+    <tspan
+       id="tspan474"
+       x="35.5" />
+  </text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#sequenceArrow)"
+     id="SequenceFlow:7"
+     d="m 50.5,50.5 17.5,0 0,0 17.5,0"
+     class="sequenceFlowLine" />
+  <rect
+     style="fill:url(#linearGradient4712);stroke:#79adc8;stroke-width:1px"
+     y="130.5"
+     x="95.5"
+     height="60"
+     width="100"
+     id="UserTask:2"
+     class="task"
+     ry="10"
+     rx="10"
+     oclass="task_o"
+     bclass="task" />
+  <use
+     transform="translate(-14.5,0.5)"
+     height="100%"
+     width="100%"
+     id="use478"
+     y="138"
+     x="123"
+     xlink:href="#userMarker" />
+  <text
+     style="font-size:10px;font-family:Verdana, sans-serif;text-anchor:middle;fill:#000000;stroke:none"
+     id="text480"
+     x="145.5"
+     y="165.5"
+     class="textLabel"
+     font-size="11">
+    <tspan
+       id="tspan482"
+       x="145.5">Implementación</tspan>
+  </text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#sequenceArrow)"
+     id="SequenceFlow:8"
+     d="m 145.5,80.5 0,20 0,0 0,20"
+     class="sequenceFlowLine" />
+  <rect
+     style="fill:url(#linearGradient4714);stroke:#79adc8;stroke-width:1px"
+     y="130.5"
+     x="235.5"
+     height="60"
+     width="100"
+     id="UserTask:3"
+     class="task"
+     ry="10"
+     rx="10"
+     oclass="task_o"
+     bclass="task" />
+  <use
+     transform="translate(-14.5,0.5)"
+     height="100%"
+     width="100%"
+     id="use486"
+     y="138"
+     x="263"
+     xlink:href="#userMarker" />
+  <text
+     style="font-size:10px;font-family:Verdana, sans-serif;text-anchor:middle;fill:#000000;stroke:none"
+     id="text488"
+     x="285.5"
+     y="165.5"
+     class="textLabel"
+     font-size="11">
+    <tspan
+       id="tspan490"
+       x="285.5">Ejecución</tspan>
+  </text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#sequenceArrow)"
+     id="SequenceFlow:9"
+     d="m 195.5,160.5 15,0 0,0 15,0"
+     class="sequenceFlowLine" />
+  <rect
+     style="fill:url(#linearGradient4716);stroke:#79adc8;stroke-width:1px"
+     y="130.5"
+     x="375.5"
+     height="60"
+     width="100"
+     id="UserTask:4"
+     class="task"
+     ry="10"
+     rx="10"
+     oclass="task_o"
+     bclass="task" />
+  <use
+     transform="translate(-14.5,0.5)"
+     height="100%"
+     width="100%"
+     id="use494"
+     y="138"
+     x="403"
+     xlink:href="#userMarker" />
+  <text
+     style="font-size:10px;font-family:Verdana, sans-serif;text-anchor:middle;fill:#000000;stroke:none"
+     id="text496"
+     x="425.5"
+     y="165.5"
+     class="textLabel"
+     font-size="11">
+    <tspan
+       id="tspan498"
+       x="425.5">Análisis</tspan>
+  </text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#sequenceArrow)"
+     id="SequenceFlow:10"
+     d="m 335.5,160.5 15,0 0,0 15,0"
+     class="sequenceFlowLine" />
+  <use
+     transform="translate(-14.5,0.5)"
+     style="fill:url(#linearGradientEndEvent);stroke:#550000;stroke-width:2px"
+     y="50"
+     x="530"
+     id="EndEvent:6"
+     height="30"
+     width="30"
+     class="endEvent"
+     xlink:href="#endEvent" />
+  <text
+     style="font-size:10px;font-family:Verdana, sans-serif;text-anchor:middle;fill:#000000;stroke:none"
+     id="text502"
+     x="515.5"
+     y="80.5"
+     class="textLabel"
+     font-size="11">
+    <tspan
+       id="tspan504"
+       x="515.5" />
+  </text>
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:10px;stroke-opacity:0.1"
+     id="path506"
+     class="sequenceFlowSubLine"
+     d="m 425.5,130.5 0,-22.62563 0,0 0,-22.625633" />
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:10px;stroke-opacity:0.1"
+     id="path508"
+     class="sequenceFlowSubLine"
+     d="m 450.24874,50.5 20.12563,0 0,0 20.12563,0" />
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:10px;stroke-opacity:0.1"
+     id="path510"
+     class="sequenceFlowSubLine"
+     d="m 390.75126,50.5 -92.62563,0 0,0 -92.62563,0" />
+  <use
+     transform="translate(-14.5,0.5)"
+     style="fill:url(#linearGradientGateway);stroke:#d4aa00;stroke-width:1px"
+     y="50"
+     x="440"
+     id="InclusiveGateway:16"
+     height="49.497475"
+     width="49.497475"
+     class="gateway"
+     xlink:href="#inclusiveDataGateway" />
+  <text
+     style="font-size:10px;font-family:Verdana, sans-serif;text-anchor:middle;fill:#000000;stroke:none"
+     id="text513"
+     x="425.5"
+     y="90.248734"
+     class="textLabel"
+     font-size="11">
+    <tspan
+       id="tspan515"
+       x="425.5" />
+  </text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;marker-end:url(#sequenceArrow)"
+     id="SequenceFlow:19"
+     d="m 425.5,130.5 0,-22.62563 0,0 0,-22.625633"
+     class="sequenceFlowLine" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;marker-start:url(#defaultTail);marker-end:url(#sequenceArrow)"
+     id="DefaultFlow:20"
+     d="m 450.24874,50.5 20.12563,0 0,0 20.12563,0"
+     class="sequenceFlowLine" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;marker-start:url(#conditionTail);marker-end:url(#sequenceArrow)"
+     id="ConditionalFlow:21"
+     d="m 390.75126,50.5 -92.62563,0 0,0 -92.62563,0"
+     class="sequenceFlowLine" />
+</svg>

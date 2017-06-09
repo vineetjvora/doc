@@ -1,0 +1,29 @@
+
+entries:
+- title: Exclusiva basada en datos
+  image: gateway-exclusivedata.png
+  description: Se utiliza para tomar decisiones en el proceso. Sólo puede tener flujos condicionales o por defecto en su salida. Cuando se usa como bifurcación, sólo uno de los flujos de salida de la compuerta es activado, dependiendo de la condición que se evalúe como verdadera. Cuando se usa como mecanismo de unión, cualquier flujo que se active a la entrada es pasado a la salida.
+
+- title: Inclusiva basada en datos
+  image: gateway-inclusivedata.png
+  description: Se utiliza para tomar decisiones en el proceso. Sólo puede tener flujos condicionales o por defecto en su salida. Cuando se usa como bifurcación, uno o más de los flujos de salida de la compuerta son activados, dependiendo de las condiciones que se evalúen como verdaderas. Cuando se usa como mecanismo de unión, se activa sólo si todos los flujos activos llegan a su entrada.
+
+- title: Paralela
+  image: gateway-parallel.png
+  description: Se utiliza exclusivamente para bifurcar y unir flujos. No puede tener flujos condicionales o por defecto. Cuando se usa como bifurcación, todos los flujos de salida de la compuerta se activan al mismo tiempo. Cuando se usa como mecanismo de unión, deben activarse todos los flujos de entrada para poder continuar (sincronización).
+
+- title: Exclusiva basada en eventos
+  image: gateway-exclusiveevents.png
+  description: Se utiliza para tomar decisiones en el proceso. Cuando se usa como bifurcación, sólo uno de los eventos conectados con sus salidas es activado y los demás son deshabilitados. No puede usarse como mecanismo de unión.
+
+- title: Compleja
+  image: gateway-complex.png
+  description: Se utiliza para tomar decisiones en el proceso. Sólo puede tener flujos condicionales o por defecto en su salida. Cuando se usa como bifurcación, los flujos a la salida se activan dependiendo de la expresión compleja definida en la compuerta. Cuando se usa como mecanismo de unión, sucede lo mismo. Esta compuerta es poco usada pues se prefiere expresar las condiciones de manera explícita usando otras compuertas.
+
+- title: Exclusiva de inicio
+  image: gateway-exclusivestart.png
+  description: Se utiliza para decidir la manera en que se instanciará el proceso. No puede ser usada como unión. Cualquiera de los eventos asociados a la salida podrá instanciar el proceso si se dispara (sólo un evento a la vez).
+
+- title: Paralela de inicio
+  image: gateway-parallelstart.png
+  description: Se utiliza para decidir la manera en que se instanciará el proceso. No puede ser usada como unión. Deberán dispararse todos los eventos asociados a sus salidas para instanciar el proceso.

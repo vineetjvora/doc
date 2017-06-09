@@ -1,0 +1,42 @@
+{% if include.block == "subprocesses" %}
+{% assign elements = site.data.bpmn_subprocesses.entries %}
+{% elsif include.block == "tasks" %}
+{% assign elements = site.data.bpmn_tasks.entries %}
+{% elsif include.block == "calltasks" %}
+{% assign elements = site.data.bpmn_calltasks.entries %}
+{% elsif include.block == "startevents" %}
+{% assign elements = site.data.bpmn_startevents.entries %}
+{% elsif include.block == "intermediateevents" %}
+{% assign elements = site.data.bpmn_intermediateevents.entries %}
+{% elsif include.block == "endevents" %}
+{% assign elements = site.data.bpmn_intermediateevents.entries %}
+{% elsif include.block == "gateways" %}
+{% assign elements = site.data.bpmn_gateways.entries %}
+{% elsif include.block == "flows" %}
+{% assign elements = site.data.bpmn_flows.entries %}
+{% elsif include.block == "artifacts" %}
+{% assign elements = site.data.bpmn_artifacts.entries %}
+{% elsif include.block == "dataobjects" %}
+{% assign elements = site.data.bpmn_dataobjects.entries %}
+{% elsif include.block == "swimlanes" %}
+{% assign elements = site.data.bpmn_swimlanes.entries %}
+{% endif %}
+
+<table class="bpmnsymbol-table">
+  <thead>
+    <tr>
+      <th>Símbolo</th>
+      <th>Nombre</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for entry in elements %}
+    <tr>
+      <td><img class="bpmnsymbol" src="images/bpmn/{{entry.image}}" /></td>
+      <td>{{entry.title}}</td>
+      <td>{{entry.description}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

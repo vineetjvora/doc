@@ -1,0 +1,17 @@
+
+entries:
+- title: Dato
+  image: dataobject.png
+  description: Representa una variable para el proceso. Sólo existe en el ámbito en que se define y mientras dicho ámbito no se ha cerrado.
+
+- title: Dato de entrada
+  image: dataobject-input.png
+  description: Representa una variable para el proceso que es requisito para que una actividad pueda iniciar. Sólo existe en el ámbito en que se define y mientras dicho ámbito no se ha cerrado.
+
+- title: Dato de salida
+  image: dataobject-output.png
+  description: Representa una variable para el proceso que es generada por una actividad. Sólo existe en el ámbito en que se define y mientras dicho ámbito no se ha cerrado.
+
+- title: Data Store
+  image: dataobject-datastore.png
+  description: Representa una colección de datos persistentes que trascienden más allá de la vida del proceso.

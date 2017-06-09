@@ -1,0 +1,41 @@
+
+entries:
+- title: Inicio normal
+  image: startevent-normal.png
+  description: Crea e inicia inmediatamente la instancia de un proceso.
+
+- title: Inicio por mensaje
+  image: startevent-message.png
+  description: Crea e inicia una instancia de un proceso en consecuencia de un mensje con datos recibido de otro proceso.
+
+- title: Inicio temporizado
+  image: startevent-timer.png
+  description: Crea e inicia una instancia de un proceso de acuerdo con un intervalo de tiempo.
+
+- title: Inicio por regla de negocio
+  image: startevent-rule.png
+  description: Crea e inicia una instancia de un proceso al cumpirse la condición en una regla de negocio.
+
+- title: Inicio por señal
+  image: startevent-signal.png
+  description: Crea e inicia una instancia de un proceso al recibir una señal.
+
+- title: Inicio múltiple
+  image: startevent-multiple.png
+  description: Crea e inicia una instancia de un proceso por uno de múltiples eventos de inicio definidos.
+
+- title: Inicio paralelo
+  image: startevent-parallel.png
+  description: Crea e inicia una instancia de un proceso cuando se cumplen todos los eventos de inicio definidos.
+
+- title: Inicio por escalamiento
+  image: startevent-escalation.png
+  description: Crea e inicia una instancia de un proceso al recibir un evento de escalamiento. Este tipo de eventos sólo puede ser usado en subprocesos de evento.
+
+- title: Inicio por error
+  image: startevent-error.png
+  description: Crea e inicia una instancia de un proceso al recibir un evento de error. Este tipo de eventos sólo puede ser usado en subprocesos de evento.
+
+- title: Inicio por compensación
+  image: startevent-compensation.png
+  description: Crea e inicia una instancia de un proceso al recibir un evento de compensación. Este tipo de eventos sólo puede ser usado en subprocesos de evento.

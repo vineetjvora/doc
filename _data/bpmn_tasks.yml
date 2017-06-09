@@ -1,0 +1,33 @@
+
+entries:
+- title: Tarea abstracta
+  image: task.png
+  description: Es una tarea sin tipo definido. Este tipo de tareas sólo debe usarse para fines documentales, en procesos de alto nivel o en procesos no ejecutables.
+
+- title: Tarea manual
+  image: task-manual.png
+  description: Se realiza sin asistencia de ninguna herramienta computacional controlada por el motor de procesos. Por ejemplo, cambiar un foco, entregar un paquete.
+
+- title: Tarea de usuario
+  image: task-user.png
+  description: La realiza un usuario en asistencia con las interfaces proporcionadas por el motor de procesos.
+
+- title: Tarea de script
+  image: task-script.png
+  description: Ejecuta una pieza de código en un lenguaje definido.
+
+- title: Tarea de servicio
+  image: task-service.png
+  description: Invoca un servicio externo para realizar un trabajo o procesamiento. Sirve para interconectar sistemas o recursos con el flujo del proceso.
+
+- title: Tarea de regla de negocio
+  image: task-rule.png
+  description: Verifica una regla de negocio del proceso.
+
+- title: Tarea de envío de mensaje
+  image: task-send.png
+  description: Envía un mensaje con información sobre las variables de un proceso a otro proceso.
+
+- title: Tarea de recepción de mensaje
+  image: task-receive.png
+  description: Recibe un mensaje con información sobre las variables de otro proceso.
