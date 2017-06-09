@@ -19,7 +19,7 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Introducción
+  - title: Introduction
     output: web, pdf
     folderitems:
 
