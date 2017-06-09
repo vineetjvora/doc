@@ -32,7 +32,7 @@ entries:
       url: /swbp_support.html
       output: web, pdf
 
-  - title: Notas de la versión
+  - title: Set Up
     output: web, pdf
     folderitems:
 
@@ -76,7 +76,7 @@ entries:
       url: /swbp_release_notes_4205.html
       output: web, pdf
 
-  - title: Instalación
+  - title: Concepts
     output: web, pdf
     folderitems:
 
@@ -92,7 +92,7 @@ entries:
       url: /swbp_firstsetup.html
       output: web, pdf
 
-  - title: Administración general
+  - title: Tutorials
     output: web, pdf
     folderitems:
 
@@ -112,7 +112,7 @@ entries:
       url: /swbp_users.html
       output: web, pdf
 
-  - title: Administración de procesos de negocio
+  - title: Reference
     output: web, pdf
     folderitems:
 
@@ -140,7 +140,7 @@ entries:
         url: /swbp_processmanagement_processconfig.html
         output: web, pdf
 
-  - title: Operación de procesos de negocio
+  - title: Sample
     output: web, pdf
     folderitems:
 
