@@ -6,6 +6,6 @@ topnav:
     - title: Home
       url: /index.html
     - title: Documentation
-      url: /wbp_support.html
+      url: /swbp_support.html
 
 #Topnav dropdowns
