@@ -4,6 +4,6 @@ topnav:
 - title: Topnav
   items:
       -title: Home
-       url: /mydoc_introduction.html
+       url: /swbp_example.html
 
 #Topnav dropdowns

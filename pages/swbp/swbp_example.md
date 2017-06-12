@@ -1,6 +1,6 @@
 ---
 title: Introduction
-permalink: mydoc_introduction.html
+permalink: swbp_example.html
 folder: swbp
 ---
 
