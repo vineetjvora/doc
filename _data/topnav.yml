@@ -4,6 +4,5 @@ topnav:
 - title: Topnav
   items:
       -title: Home
-       url: /swbp_example.html
-
+       external_url: https://google.com
 #Topnav dropdowns
