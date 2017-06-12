@@ -3,6 +3,9 @@
 topnav:
 - title: Topnav
   items:
-    - title: GitHub
-      url: /swbp_install.html
+    - title: Home
+      url: /index.html
+    - title: Documentation
+      url: /wbp_support.html
+
 #Topnav dropdowns
