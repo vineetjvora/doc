@@ -3,6 +3,6 @@
 topnav:
 - title: Topnav
   items:
-      -title: Home
-       external_url: https://github.com/tomjohnson1492/documentation-theme-jekyll
+    - title: GitHub
+      external_url: https://github.com/tomjohnson1492/documentation-theme-jekyll
 #Topnav dropdowns
