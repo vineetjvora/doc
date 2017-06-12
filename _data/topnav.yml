@@ -4,5 +4,5 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      url: /swbp_install.md
+      url: /swbp_install.html
 #Topnav dropdowns
