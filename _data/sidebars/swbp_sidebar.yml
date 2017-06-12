@@ -23,11 +23,6 @@ entries:
     output: web
     folderitems:
 
-  - title: Acerca del producto
-      url: /index.md
-    output: web
-      #type: homepage
-
     - title: Soporte técnico
       url: /swbp_support.html
       output: web
