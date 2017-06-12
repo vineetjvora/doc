@@ -1,9 +1,0 @@
-
-entries:
-- title: Pool
-  image: pool.png
-  description: Se utiliza para delimitar el proceso completo.
-
-- title: Lane
-  image: lane.png
-  description: Se utiliza para delimitar la responsabilidad de un rol o grupo de usuarios sobre un conjunto de actividades. Puede tener más lanes anidados.
