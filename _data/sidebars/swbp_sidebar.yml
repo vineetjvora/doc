@@ -7,171 +7,171 @@ entries:
   folders:
 
   - title:
-    output: pdf
+    output: web
     type: frontmatter
     folderitems:
     - title:
       url: /titlepage
-      output: pdf
+      output: web
       type: frontmatter
     - title:
       url: /tocpage
-      output: pdf
+      output: web
       type: frontmatter
 
   - title: Introduction
-    output: web, pdf
+    output: web
     folderitems:
 
   - title: Acerca del producto
       url: /index.html
-      output: web, pdf
-      type: homepage
+    output: web
+      #type: homepage
 
     - title: Soporte técnico
       url: /swbp_support.html
-      output: web, pdf
+      output: web
 
   - title: Set Up
-    output: web, pdf
+    output: web
     folderitems:
 
     - title: 4.5.11.2
       url: /swbp_release_notes_45112.html
-      output: web, pdf
+      output: web
 
     - title: 4.5.11.1
       url: /swbp_release_notes_45111.html
-      output: web, pdf
+      output: web
 
     - title: 4.5.10.1
       url: /swbp_release_notes_45101.html
-      output: web, pdf
+      output: web
 
     - title: 4.5.10.0
       url: /swbp_release_notes_45100.html
-      output: web, pdf
+      output: web
 
     - title: 4.5.6.0
       url: /swbp_release_notes_4560.html
-      output: web, pdf
+      output: web 
 
     - title: 4.5.0.0
       url: /swbp_release_notes_4500.html
-      output: web, pdf
+      output: web
 
     - title: 4.2.5.5
       url: /swbp_release_notes_4255.html
-      output: web, pdf
+      output: web
 
     - title: 4.2.2.0
       url: /swbp_release_notes_4220.html
-      output: web, pdf
+      output: web
 
     - title: 4.2.1.0
       url: /swbp_release_notes_4210.html
-      output: web, pdf
+      output: web
 
     - title: 4.2.0.5
       url: /swbp_release_notes_4205.html
-      output: web, pdf
+      output: web
 
   - title: Concepts
-    output: web, pdf
+    output: web, 
     folderitems:
 
     - title: Prerequisitos
       url: /swbp_prerequisites.html
-      output: web, pdf
+      output: web
 
     - title: Instalación
       url: /swbp_install.html
-      output: web, pdf
+      output: web
 
     - title: Configuración inicial
       url: /swbp_firstsetup.html
-      output: web, pdf
+      output: web
 
   - title: Tutorials
-    output: web, pdf
+    output: web
     folderitems:
 
     - title: Organización de la aplicación
       url: /swbp_app_components.html
-      output: web, pdf
+      output: web
 
     - title: Elementos de la interfaz del sitio de administración
       url: /swbp_admin_ui.html
-      output: web, pdf
+      output: web
 
     - title: Gestión de sitios de procesos
       url: /swbp_processsite_management.html
-      output: web, pdf
+      output: web
 
     - title: Gestión de usuarios y permisos
       url: /swbp_users.html
-      output: web, pdf
+      output: web
 
   - title: Reference
-    output: web, pdf
+    output: web
     folderitems:
 
       - title: Flujo de trabajo
         url: /swbp_processmanagement_workflow.html
-        output: web, pdf
+        output: web
 
       - title: Procesos y grupos de proceso
         url: /swbp_processmanagement_processes.html
-        output: web, pdf
+        output: web
 
       - title: Modelado de procesos
         url: /swbp_processmanagement_processmodeling.html
-        output: web, pdf
+        output: web
 
       - title: Documentación de procesos de negocio
         url: /swbp_processmanagement_docs.html
-        output: web, pdf
+        output: web
 
       - title: Configuración de las herramientas de procesos
         url: /swbp_processmanagement_tools.html
-        output: web, pdf
+        output: web
 
       - title: Configuración de las propiedades de ejecución
         url: /swbp_processmanagement_processconfig.html
-        output: web, pdf
+        output: web
 
   - title: Sample
-    output: web, pdf
+    output: web
     folderitems:
 
       - title: Bandeja de tareas
         url: /swbp_create_process_site.html
-        output: web, pdf
+        output: web
 
       - title: Repositorio de documentos
         url: /swbp_create_process_site.html
-        output: web, pdf
+        output: web
 
       - title: Seguimiento a procesos
         url: /swbp_create_process_site.html
-        output: web, pdf
+        output: web
 
       - title: Generación de reportes
         url: /swbp_create_process_site.html
-        output: web, pdf
+        output: web
 
       - title: Herramientas de colaboración
         url: /swbp_create_process_site.html
-        output: web, pdf
+        output: web
 
   - title: Recursos adicionales
-    output: web, pdf
+    output: web
     folderitems:
 
       - title: Referencia rápida de la notación BPMN 2.0
         url: /swbp_bpmn2_quickreference.html
-        output: web, pdf
+        output: web
 
       - title: Información para desarrolladores
         url: /swbp_developers.html
-        output: web, pdf
+        output: web
