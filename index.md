@@ -3,7 +3,7 @@ title: Home Page
 tags: [getting_started]
 <!---sidebar: swbp_sidebar-->
 permalink: index.html
-summary: Esta sección brinda una introducción a SemanticWeBuilder Process y sus características.
+summary: HELLO Esta sección brinda una introducción a SemanticWeBuilder Process y sus características.
 ---
 
 ## Acerca del producto
