@@ -4,5 +4,5 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/tomjohnson1492/documentation-theme-jekyll
+      url: /swbp_install.md
 #Topnav dropdowns
