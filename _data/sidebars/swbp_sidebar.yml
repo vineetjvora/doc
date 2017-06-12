@@ -24,7 +24,7 @@ entries:
     folderitems:
 
   - title: Acerca del producto
-      url: /index.html
+      url: /index.md
     output: web
       #type: homepage
 
